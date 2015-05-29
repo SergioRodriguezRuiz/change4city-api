@@ -15,7 +15,7 @@ router.get('/', function(req, res) {
     res.send("Hello world!");
 });
 
-mongoose.connect('mongodb://localhost/event', function(err, res) {
+mongoose.connect('mongodb://sergio:sergio1992@ds041032.mongolab.com:41032/heroku_app37166982', function(err, res) {
     if(err) {
         console.log('algun error');
     } else {
@@ -24,7 +24,7 @@ mongoose.connect('mongodb://localhost/event', function(err, res) {
 });
 
 // Import Models and controllers
-var models     = require('./models/event')(app, mongoose);
+//var models     = require('./models/event')(app, mongoose);
 
 app.use(router);
 

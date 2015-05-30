@@ -22,7 +22,7 @@ mongoose.connect(uristring, function (err, res) {
 });
 
 app.get('/', function(request, response) {
-  response.send("holaaaaa");
+  response.send(text);
 });
 
 app.listen(app.get('port'), function() {

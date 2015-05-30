@@ -9,9 +9,8 @@ var uristring =
     process.env.MONGOHQ_URL ||
     'mongodb://localhost/HelloMongoose';
 
-app.set('port', (process.env.PORT || 5000));
-var text;
-mongoose.connect(uristring, function (err, res) {
+// Connection to DB
+mongoose.connect(uristring, function(err, res) {
     if (err) {
         console.log ('ERROR connecting to: ' + uristring + '. ' + err);
         text = 'hola';

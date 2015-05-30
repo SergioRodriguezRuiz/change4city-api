@@ -10,11 +10,13 @@ var uristring =
     'mongodb://localhost/HelloMongoose';
 
 app.set('port', (process.env.PORT || 5000));
-
+var text;
 mongoose.connect(uristring, function (err, res) {
     if (err) {
         console.log ('ERROR connecting to: ' + uristring + '. ' + err);
+        text = 'hola';
     } else {
+        text = 'ola';
         console.log ('Succeeded connected to: ' + uristring);
     }
 });

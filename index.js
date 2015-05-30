@@ -33,14 +33,6 @@ mongoose.connect(uristring, function (err, res) {
 var models     = require('./models/event')(app, mongoose);
 var EventCtrl = require('./controllers/events');
 
-
-// Example Route
-var router = express.Router();
-router.get('/', function(req, res) {
-    res.send(text);
-});
-app.use(router);
-
 // API routes
 var events = express.Router();
 

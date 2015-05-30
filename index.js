@@ -28,12 +28,26 @@ mongoose.connect(uristring, function (err, res) {
     }
 });
 
+
+// Import Models and controllers
+var models     = require('./models/event')(app, mongoose);
+var EventCtrl = require('./controllers/events');
+
+
 // Example Route
 var router = express.Router();
 router.get('/', function(req, res) {
     res.send(text);
 });
 app.use(router);
+
+// API routes
+var events = express.Router();
+
+events.route('/events')
+    .get(EventCtrl.findAllEvents);
+app.use('/api', events);
+
 // Start server
 app.listen(app.get('port'), function() {
     console.log('Node app is running on port', app.get('port'));

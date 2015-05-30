@@ -12,3 +12,19 @@ exports.findAllEvents = function(req, res) {
        }
     });
 };
+
+//POST - Insert a new Event in the DB
+exports.addEvent = function(req, res) {
+    console.log('POST');
+
+    var event = new Event({
+       name:    req.body.name
+    });
+
+    event.save(function(err, event) {
+        if(err) {
+            return res.send(500, err.message);
+        }
+        res.status(200).jsonp(event);
+    })
+}

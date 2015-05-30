@@ -21,10 +21,8 @@ var text;
 mongoose.connect(uristring, function (err, res) {
     if (err) {
         console.log ('ERROR connecting to: ' + uristring + '. ' + err);
-        text = 'ola';
     } else {
         console.log ('Succeeded connected to: ' + uristring);
-        text = 'hola';
     }
 });
 
@@ -37,7 +35,8 @@ var EventCtrl = require('./controllers/events');
 var events = express.Router();
 
 events.route('/events')
-    .get(EventCtrl.findAllEvents);
+    .get(EventCtrl.findAllEvents)
+    .post(EventCtrl.addEvent);
 app.use('/api', events);
 
 // Start server

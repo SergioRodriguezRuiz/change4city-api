@@ -16,10 +16,13 @@ exports.findAllEvents = function(req, res) {
 //POST - Insert a new Event in the DB
 exports.addEvent = function(req, res) {
     console.log('POST');
-
-    var event = new Event({
-       name:    req.body.name
-    });
+    if(req) {
+        res.send(req);
+    } else {
+        var event = new Event({
+            name: req.body.name
+        });
+    }
 
     event.save(function(err, event) {
         if(err) {

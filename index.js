@@ -15,6 +15,11 @@ var uristring = 'mongodb://sergio:sergio1992@ds041032.mongolab.com:41032/heroku_
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
+// Middlewares
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(methodOverride());
+
 // Makes connection asynchronously.  Mongoose will queue up database
 // operations and release them when the connection is complete.
 var text;
@@ -37,6 +42,10 @@ var events = express.Router();
 events.route('/events')
     .get(EventCtrl.findAllEvents)
     .post(EventCtrl.addEvent);
+
+events.route('/events/:id')
+    .delete(EventCtrl.deleteEvent)
+
 app.use('/api', events);
 
 // Start server

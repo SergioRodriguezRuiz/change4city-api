@@ -31,7 +31,7 @@ exports.addEvent = function(req, res) {
 };
 
 //DELETE - Delete a event with specified ID
-exports.deleteEvent = function(req, res) {
+exports.deleteEventId = function(req, res) {
     console.log('DELETE');
 
     Event.findById(req.params.id, function(err, event) {
@@ -54,5 +54,20 @@ exports.getEventId = function(req, res) {
        } else {
            res.send(500, err.message);
        }
+    });
+};
+
+//PUT by ID
+exports.updateEventId = function(req, res) {
+    console.log('PUT ID');
+
+    Event.findById(req.params.id, function(err, event) {
+        event.c_id = req.body.id;
+        event.name = req.body.name;
+
+        event.save(function(err) {
+           if(err) return res.status(500, err.message);
+            res.status(200).jsonp(event);
+        });
     });
 }

@@ -44,8 +44,9 @@ events.route('/events')
     .post(EventCtrl.addEvent);
 
 events.route('/events/:id')
-    .delete(EventCtrl.deleteEvent)
+    .delete(EventCtrl.deleteEventId)
     .get(EventCtrl.getEventId)
+    .put(EventCtrl.updateEventId);
 app.use('/api', events);
 
 // Start server

@@ -43,3 +43,16 @@ exports.deleteEvent = function(req, res) {
         }
     });
 };
+
+//GET by ID
+exports.getEventId = function(req, res) {
+    console.log('GET ID');
+
+    Event.findById(req.params.id, function(err, event) {
+       if(!err && event) {
+           res.status(200).jsonp(event);
+       } else {
+           res.send(500, err.message);
+       }
+    });
+}

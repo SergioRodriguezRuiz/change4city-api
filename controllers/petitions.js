@@ -15,12 +15,12 @@ exports.findAllPetitions = function(req, res) {
 
 
 //GET by ID
-exports.getEventId = function(req, res) {
+exports.findPetitionId = function(req, res) {
     console.log('GET ID');
 
-    Event.findById(req.params.id, function(err, event) {
-        if(!err && event) {
-            res.status(200).jsonp(event);
+    Petition.findById(req.params.id, function(err, pet) {
+        if(!err && pet) {
+            res.status(200).jsonp(pet);
         } else {
             res.send(500, err.message);
         }

@@ -50,8 +50,12 @@ r.route('/events/:id')
     .delete(EventCtrl.deleteEventId)
     .get(EventCtrl.getEventId)
     .put(EventCtrl.updateEventId);
+
 r.route('/petitions')
     .get(PetitionCtrl.findAllPetitions);
+
+r.route('/petitions/:id')
+    .get(PetitionCtrl.findPetitionId())
 app.use('/api', r);
 
 

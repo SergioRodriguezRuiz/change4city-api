@@ -28,16 +28,16 @@ exports.findPetitionId = function(req, res) {
 };
 
 //PUT by ID
-exports.updateEventId = function(req, res) {
+exports.updatePetitionId = function(req, res) {
     console.log('PUT ID');
 
-    Event.findById(req.params.id, function(err, event) {
-        event.c_id = req.body.id;
-        event.name = req.body.name;
+    Petition.findById(req.params.id, function(err, petition) {
+        petition.positive = req.body.positive;
+        petition.negative = req.body.negative;
 
-        event.save(function(err) {
+        petition.save(function(err) {
             if(err) return res.status(500, err.message);
-            res.status(200).jsonp(event);
+            res.status(200).jsonp(petition);
         });
     });
 };

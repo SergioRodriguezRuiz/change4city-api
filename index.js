@@ -33,21 +33,27 @@ mongoose.connect(uristring, function (err, res) {
 
 
 // Import Models and controllers
-var models     = require('./models/event')(app, mongoose);
+var EventModel     = require('./models/event')(app, mongoose);
 var EventCtrl = require('./controllers/events');
+var PetitionModel = require('./models/petition')(app, mongoose);
+var PetitionCtrl = require('./controllers/petitions');
 
 // API routes
-var events = express.Router();
+var r = express.Router();
 
-events.route('/events')
+
+r.route('/events')
     .get(EventCtrl.findAllEvents)
     .post(EventCtrl.addEvent);
 
-events.route('/events/:id')
+r.route('/events/:id')
     .delete(EventCtrl.deleteEventId)
     .get(EventCtrl.getEventId)
     .put(EventCtrl.updateEventId);
-app.use('/api', events);
+r.route('/petitions')
+    .get(PetitionCtrl.findAllPetitions);
+app.use('/api', r);
+
 
 // Start server
 app.listen(app.get('port'), function() {

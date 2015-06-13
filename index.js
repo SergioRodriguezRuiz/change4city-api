@@ -55,7 +55,7 @@ r.route('/petitions')
     .get(PetitionCtrl.findAllPetitions);
 
 r.route('/petitions/:id')
-    .get(PetitionCtrl.findPetitionId())
+    .get(PetitionCtrl.findPetitionId)
 app.use('/api', r);
 
 

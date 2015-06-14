@@ -18,8 +18,14 @@ exports.addEvent = function(req, res) {
     console.log('POST');
 
     var event = new Event({
-        c_id:   req.body.id,
-        name:   req.body.name
+        c_id:           req.body.id,
+        name:           req.body.name,
+        type:           req.body.type,
+        relevance:      req.body.relevance,
+        description:    req.body.description,
+        place:          req.body.place,
+        date:           req.body.date
+
     });
 
     event.save(function(err, event) {

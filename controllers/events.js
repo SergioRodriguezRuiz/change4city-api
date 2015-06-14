@@ -42,10 +42,7 @@ exports.deleteEventId = function(req, res) {
 
     Event.findById(req.params.id, function(err, event) {
         if(!err && event) {
-            event.remove(function (err) {
-                if (err) return res.send(500, err.message);
-                res.status(200);
-            })
+            event.remove();
         }
     });
 };

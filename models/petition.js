@@ -7,6 +7,7 @@ exports = module.exports = function(app, mongoose) {
         theme:          { type: String},
         positive:       { type: Number},
         date:           { type: String},
+        close:          { type: Boolean},
         negative:       { type: Number}
     });
 

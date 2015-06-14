@@ -52,7 +52,8 @@ exports.addPetition = function(req, res) {
         description:    req.body.description,
         date:           req.body.date,
         positive:       0,
-        negative:       0
+        negative:       0,
+        close:          false
     });
 
     petition.save(function(err, petition) {

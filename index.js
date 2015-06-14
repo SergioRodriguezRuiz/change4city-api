@@ -52,7 +52,8 @@ r.route('/events/:id')
     .put(EventCtrl.updateEventId);
 
 r.route('/petitions')
-    .get(PetitionCtrl.findAllPetitions);
+    .get(PetitionCtrl.findAllPetitions)
+    .post(PetitionCtrl.addPetition);
 
 r.route('/petitions/:id')
     .get(PetitionCtrl.findPetitionId)

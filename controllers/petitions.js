@@ -43,19 +43,23 @@ exports.updatePetitionId = function(req, res) {
 };
 
 //POST - Insert a new Event in the DB
-exports.addEvent = function(req, res) {
+exports.addPetition = function(req, res) {
     console.log('POST');
 
-    var event = new Event({
-        c_id:   req.body.id,
-        name:   req.body.name
+    var petition = new Petition({
+        name:           req.body.name,
+        theme:          req.body.theme,
+        description:    req.body.description,
+        date:           req.body.date,
+        positive:       0,
+        negative:       0
     });
 
-    event.save(function(err, event) {
+    petition.save(function(err, petition) {
         if(err) {
             return res.send(500, err.message);
         }
-        res.status(200).jsonp(event);
+        res.status(200).jsonp(petition);
     })
 };
 

@@ -60,7 +60,7 @@ r.route('/petitions/:id')
     .put(PetitionCtrl.updatePetitionId)
     .delete(PetitionCtrl.deletePetitionId);
 
-r.route('/petition/close/:id')
+r.route('/petitions/close/:id')
     .put(PetitionCtrl.closePetitionId);
 
 

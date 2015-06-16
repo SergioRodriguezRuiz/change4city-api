@@ -57,7 +57,13 @@ r.route('/petitions')
 
 r.route('/petitions/:id')
     .get(PetitionCtrl.findPetitionId)
-    .put(PetitionCtrl.updatePetitionId);
+    .put(PetitionCtrl.updatePetitionId)
+    .delete(PetitionCtrl.deletePetitionId);
+
+r.route('/petition/close/:id')
+    .put(PetitionCtrl.closePetitionId);
+
+
 app.use('/api', r);
 
 

@@ -65,15 +65,31 @@ exports.addPetition = function(req, res) {
 };
 
 //DELETE - Delete a event with specified ID
-exports.deleteEventId = function(req, res) {
+exports.deletePetitionId = function(req, res) {
     console.log('DELETE');
 
-    Event.findById(req.params.id, function(err, event) {
-        if(!err && event) {
-            event.remove(function (err) {
+    Petition.findById(req.params.id, function(err, pet) {
+        if(!err && pet) {
+            pet.remove(function (err) {
                 if (err) return res.send(500, err.message);
-                res.status(200);
+                res.status(200).send('Eliminado');
             })
         }
     });
+};
+
+//CLOSE PETITION
+exports.closePetitionId = function (req, res) {
+    console.log('CLOSE PETITION');
+
+    Petition.findById(req.params.id, function (err, petition) {
+        if(!err && petition) {
+            petition.close = true;
+
+            petition.save(function(err) {
+                if(err) return res.status(500, err.message);
+                res.status(200).jsonp(petition);
+            });
+        }
+    })
 }

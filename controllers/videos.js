@@ -44,3 +44,16 @@ exports.addVideo = function(req, res) {
     })
 };
 
+//DELETE - Delete a event with specified ID
+exports.deleteVideoId = function(req, res) {
+    console.log('DELETE');
+
+    Video.findById(req.params.id, function(err, vid) {
+        if(!err && vid) {
+            vid.remove(function (err) {
+                if (err) return res.send(500, err.message);
+                res.status(200).send('Eliminado');
+            })
+        }
+    });
+};

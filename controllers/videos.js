@@ -30,13 +30,9 @@ exports.findVideoId = function(req, res) {
 //POST - Insert a new Event in the DB
 exports.addVideo = function(req, res) {
     console.log('POST');
-
-    var id_vimeo = (req.body.url).split("/");
-    id_vimeo = id_vimeo[id_vimeo.length-1];
     
     var video = new Video({
-        url:                req.body.url,
-        id_vimeo:           req.body.id_vimeo
+        url:                req.body.url
     });
 
     video.save(function(err, vid) {

@@ -66,7 +66,12 @@ r.route('/petitions/close/:id')
     .put(PetitionCtrl.closePetitionId);
 
 r.route('/videos')
-    .get(VideoCtrl.findAllVideos);
+    .get(VideoCtrl.findAllVideos)
+    .post(VideoCtrl.addVideo);
+
+r.route('/videos/:id')
+    .get(VideoCtrl.findVideoId)
+    .delete(VideoCtrl.deleteVideoId);
 
 
 app.use('/api', r);

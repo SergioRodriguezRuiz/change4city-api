@@ -37,7 +37,7 @@ var EventModel     = require('./models/event')(app, mongoose);
 var EventCtrl = require('./controllers/events');
 var PetitionModel = require('./models/petition')(app, mongoose);
 var PetitionCtrl = require('./controllers/petitions');
-//var VideoCtrl = require('./controllers/videos');
+var VideoCtrl = require('./controllers/videos');
 
 // API routes
 var r = express.Router();

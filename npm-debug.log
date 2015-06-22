@@ -1,0 +1,1072 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@2.10.1
+3 info using node@v0.12.4
+4 verbose node symlink /usr/bin/node
+5 verbose readDependencies loading dependencies from /home/sergio/api-city/package.json
+6 verbose install where, deps [ '/home/sergio/api-city',
+6 verbose install   [ 'mongoose', 'express', 'method-override', 'body-parser' ] ]
+7 verbose install where, peers [ '/home/sergio/api-city', [] ]
+8 verbose installManyTop reading for lifecycle /home/sergio/api-city/package.json
+9 info preinstall node-js-getting-started@0.1.3
+10 verbose readDependencies loading dependencies from /home/sergio/api-city/package.json
+11 silly cache add args [ 'method-override@^2.1.2', null ]
+12 verbose cache add spec method-override@^2.1.2
+13 silly cache add parsed spec { raw: 'method-override@^2.1.2',
+13 silly cache add   scope: null,
+13 silly cache add   name: 'method-override',
+13 silly cache add   rawSpec: '^2.1.2',
+13 silly cache add   spec: '>=2.1.2 <3.0.0',
+13 silly cache add   type: 'range' }
+14 silly addNamed method-override@>=2.1.2 <3.0.0
+15 verbose addNamed ">=2.1.2 <3.0.0" is a valid semver range for method-override
+16 silly addNameRange { name: 'method-override',
+16 silly addNameRange   range: '>=2.1.2 <3.0.0',
+16 silly addNameRange   hasData: false }
+17 silly mapToRegistry name method-override
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry uri https://registry.npmjs.org/method-override
+21 verbose addNameRange registry:https://registry.npmjs.org/method-override not in flight; fetching
+22 silly cache add args [ 'body-parser@^1.5.1', null ]
+23 verbose cache add spec body-parser@^1.5.1
+24 silly cache add parsed spec { raw: 'body-parser@^1.5.1',
+24 silly cache add   scope: null,
+24 silly cache add   name: 'body-parser',
+24 silly cache add   rawSpec: '^1.5.1',
+24 silly cache add   spec: '>=1.5.1 <2.0.0',
+24 silly cache add   type: 'range' }
+25 silly addNamed body-parser@>=1.5.1 <2.0.0
+26 verbose addNamed ">=1.5.1 <2.0.0" is a valid semver range for body-parser
+27 silly addNameRange { name: 'body-parser', range: '>=1.5.1 <2.0.0', hasData: false }
+28 silly mapToRegistry name body-parser
+29 silly mapToRegistry using default registry
+30 silly mapToRegistry registry https://registry.npmjs.org/
+31 silly mapToRegistry uri https://registry.npmjs.org/body-parser
+32 verbose addNameRange registry:https://registry.npmjs.org/body-parser not in flight; fetching
+33 silly cache add args [ 'mongoose@~3.6.11', null ]
+34 verbose cache add spec mongoose@~3.6.11
+35 silly cache add parsed spec { raw: 'mongoose@~3.6.11',
+35 silly cache add   scope: null,
+35 silly cache add   name: 'mongoose',
+35 silly cache add   rawSpec: '~3.6.11',
+35 silly cache add   spec: '>=3.6.11 <3.7.0',
+35 silly cache add   type: 'range' }
+36 silly addNamed mongoose@>=3.6.11 <3.7.0
+37 verbose addNamed ">=3.6.11 <3.7.0" is a valid semver range for mongoose
+38 silly addNameRange { name: 'mongoose', range: '>=3.6.11 <3.7.0', hasData: false }
+39 silly mapToRegistry name mongoose
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry uri https://registry.npmjs.org/mongoose
+43 verbose addNameRange registry:https://registry.npmjs.org/mongoose not in flight; fetching
+44 silly cache add args [ 'express@~4.9.x', null ]
+45 verbose cache add spec express@~4.9.x
+46 silly cache add parsed spec { raw: 'express@~4.9.x',
+46 silly cache add   scope: null,
+46 silly cache add   name: 'express',
+46 silly cache add   rawSpec: '~4.9.x',
+46 silly cache add   spec: '>=4.9.0 <4.10.0',
+46 silly cache add   type: 'range' }
+47 silly addNamed express@>=4.9.0 <4.10.0
+48 verbose addNamed ">=4.9.0 <4.10.0" is a valid semver range for express
+49 silly addNameRange { name: 'express', range: '>=4.9.0 <4.10.0', hasData: false }
+50 silly mapToRegistry name express
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry uri https://registry.npmjs.org/express
+54 verbose addNameRange registry:https://registry.npmjs.org/express not in flight; fetching
+55 verbose request uri https://registry.npmjs.org/method-override
+56 verbose request no auth needed
+57 info attempt registry request try #1 at 12:59:00
+58 verbose request id 36c522cad36914a7
+59 http request GET https://registry.npmjs.org/method-override
+60 verbose request uri https://registry.npmjs.org/body-parser
+61 verbose request no auth needed
+62 info attempt registry request try #1 at 12:59:00
+63 http request GET https://registry.npmjs.org/body-parser
+64 verbose request uri https://registry.npmjs.org/mongoose
+65 verbose request no auth needed
+66 info attempt registry request try #1 at 12:59:00
+67 http request GET https://registry.npmjs.org/mongoose
+68 verbose request uri https://registry.npmjs.org/express
+69 verbose request no auth needed
+70 info attempt registry request try #1 at 12:59:00
+71 verbose etag "A3VQYL9RGRF2JSC4X0P3XNORL"
+72 http request GET https://registry.npmjs.org/express
+73 http 200 https://registry.npmjs.org/method-override
+74 silly get cb [ 200,
+74 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+74 silly get     etag: '"50FS6DUGZJ2HNMOTIUNCMMTQ"',
+74 silly get     'content-type': 'application/json',
+74 silly get     'cache-control': 'max-age=60',
+74 silly get     'content-length': '32055',
+74 silly get     'accept-ranges': 'bytes',
+74 silly get     date: 'Mon, 22 Jun 2015 10:59:00 GMT',
+74 silly get     via: '1.1 varnish',
+74 silly get     age: '11',
+74 silly get     connection: 'keep-alive',
+74 silly get     'x-served-by': 'cache-lcy1126-LCY',
+74 silly get     'x-cache': 'HIT',
+74 silly get     'x-cache-hits': '1',
+74 silly get     'x-timer': 'S1434970740.959713,VS0,VE0',
+74 silly get     vary: 'Accept' } ]
+75 verbose get saving method-override to /home/sergio/.npm/registry.npmjs.org/method-override/.cache.json
+76 silly addNameRange number 2 { name: 'method-override',
+76 silly addNameRange   range: '>=2.1.2 <3.0.0',
+76 silly addNameRange   hasData: true }
+77 silly addNameRange versions [ 'method-override',
+77 silly addNameRange   [ '1.0.0',
+77 silly addNameRange     '1.0.1',
+77 silly addNameRange     '1.0.2',
+77 silly addNameRange     '2.0.0',
+77 silly addNameRange     '2.0.1',
+77 silly addNameRange     '2.0.2',
+77 silly addNameRange     '2.1.0',
+77 silly addNameRange     '2.1.1',
+77 silly addNameRange     '2.1.2',
+77 silly addNameRange     '2.1.3',
+77 silly addNameRange     '2.2.0',
+77 silly addNameRange     '2.3.0',
+77 silly addNameRange     '2.3.1',
+77 silly addNameRange     '2.3.2',
+77 silly addNameRange     '2.3.3' ] ]
+78 silly addNamed method-override@2.3.3
+79 verbose addNamed "2.3.3" is a plain semver version for method-override
+80 silly mapToRegistry name method-override
+81 silly mapToRegistry using default registry
+82 silly mapToRegistry registry https://registry.npmjs.org/
+83 silly mapToRegistry uri https://registry.npmjs.org/method-override
+84 verbose addRemoteTarball https://registry.npmjs.org/method-override/-/method-override-2.3.3.tgz not in flight; adding
+85 verbose addRemoteTarball [ 'https://registry.npmjs.org/method-override/-/method-override-2.3.3.tgz',
+85 verbose addRemoteTarball   '5dc2186d26343bf33e7a2001a8aa3e50440e772b' ]
+86 info retry fetch attempt 1 at 12:59:01
+87 info attempt registry request try #1 at 12:59:01
+88 http fetch GET https://registry.npmjs.org/method-override/-/method-override-2.3.3.tgz
+89 http 200 https://registry.npmjs.org/body-parser
+90 silly get cb [ 200,
+90 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+90 silly get     etag: '"2U0I5BC7H854H2ISRK8TDA5IS"',
+90 silly get     'content-type': 'application/json',
+90 silly get     'cache-control': 'max-age=60',
+90 silly get     'content-length': '101666',
+90 silly get     'accept-ranges': 'bytes',
+90 silly get     date: 'Mon, 22 Jun 2015 10:59:00 GMT',
+90 silly get     via: '1.1 varnish',
+90 silly get     age: '35',
+90 silly get     connection: 'keep-alive',
+90 silly get     'x-served-by': 'cache-lcy1133-LCY',
+90 silly get     'x-cache': 'HIT',
+90 silly get     'x-cache-hits': '2',
+90 silly get     'x-timer': 'S1434970740.949152,VS0,VE0',
+90 silly get     vary: 'Accept' } ]
+91 verbose get saving body-parser to /home/sergio/.npm/registry.npmjs.org/body-parser/.cache.json
+92 silly addNameRange number 2 { name: 'body-parser', range: '>=1.5.1 <2.0.0', hasData: true }
+93 silly addNameRange versions [ 'body-parser',
+93 silly addNameRange   [ '1.0.0',
+93 silly addNameRange     '1.0.1',
+93 silly addNameRange     '1.0.2',
+93 silly addNameRange     '1.1.0',
+93 silly addNameRange     '1.1.1',
+93 silly addNameRange     '1.1.2',
+93 silly addNameRange     '1.2.0',
+93 silly addNameRange     '1.2.1',
+93 silly addNameRange     '1.2.2',
+93 silly addNameRange     '1.3.0',
+93 silly addNameRange     '1.3.1',
+93 silly addNameRange     '1.4.0',
+93 silly addNameRange     '1.4.1',
+93 silly addNameRange     '1.4.2',
+93 silly addNameRange     '1.4.3',
+93 silly addNameRange     '1.5.0',
+93 silly addNameRange     '1.5.1',
+93 silly addNameRange     '1.5.2',
+93 silly addNameRange     '1.6.0',
+93 silly addNameRange     '1.6.1',
+93 silly addNameRange     '1.6.2',
+93 silly addNameRange     '1.6.3',
+93 silly addNameRange     '1.6.4',
+93 silly addNameRange     '1.6.5',
+93 silly addNameRange     '1.6.6',
+93 silly addNameRange     '1.6.7',
+93 silly addNameRange     '1.7.0',
+93 silly addNameRange     '1.8.0',
+93 silly addNameRange     '1.8.1',
+93 silly addNameRange     '1.8.2',
+93 silly addNameRange     '1.8.3',
+93 silly addNameRange     '1.8.4',
+93 silly addNameRange     '1.9.0',
+93 silly addNameRange     '1.9.1',
+93 silly addNameRange     '1.9.2',
+93 silly addNameRange     '1.9.3',
+93 silly addNameRange     '1.10.0',
+93 silly addNameRange     '1.10.1',
+93 silly addNameRange     '1.10.2',
+93 silly addNameRange     '1.11.0',
+93 silly addNameRange     '1.12.0',
+93 silly addNameRange     '1.12.1',
+93 silly addNameRange     '1.12.2',
+93 silly addNameRange     '1.12.3',
+93 silly addNameRange     '1.12.4',
+93 silly addNameRange     '1.13.0',
+93 silly addNameRange     '1.13.1' ] ]
+94 silly addNamed body-parser@1.13.1
+95 verbose addNamed "1.13.1" is a plain semver version for body-parser
+96 silly mapToRegistry name body-parser
+97 silly mapToRegistry using default registry
+98 silly mapToRegistry registry https://registry.npmjs.org/
+99 silly mapToRegistry uri https://registry.npmjs.org/body-parser
+100 verbose addRemoteTarball https://registry.npmjs.org/body-parser/-/body-parser-1.13.1.tgz not in flight; adding
+101 verbose addRemoteTarball [ 'https://registry.npmjs.org/body-parser/-/body-parser-1.13.1.tgz',
+101 verbose addRemoteTarball   'f07218bc2c4b5e36ca261557c9465481b29ecdcd' ]
+102 info retry fetch attempt 1 at 12:59:01
+103 info attempt registry request try #1 at 12:59:01
+104 http fetch GET https://registry.npmjs.org/body-parser/-/body-parser-1.13.1.tgz
+105 http 200 https://registry.npmjs.org/mongoose
+106 silly get cb [ 200,
+106 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+106 silly get     etag: '"EO6UASA2GDU6OSPMMNG3VTJS"',
+106 silly get     'content-type': 'application/json',
+106 silly get     'cache-control': 'max-age=60',
+106 silly get     'content-length': '330921',
+106 silly get     'accept-ranges': 'bytes',
+106 silly get     date: 'Mon, 22 Jun 2015 10:59:00 GMT',
+106 silly get     via: '1.1 varnish',
+106 silly get     age: '37',
+106 silly get     connection: 'keep-alive',
+106 silly get     'x-served-by': 'cache-lcy1122-LCY',
+106 silly get     'x-cache': 'HIT',
+106 silly get     'x-cache-hits': '2',
+106 silly get     'x-timer': 'S1434970740.965831,VS0,VE0',
+106 silly get     vary: 'Accept' } ]
+107 verbose get saving mongoose to /home/sergio/.npm/registry.npmjs.org/mongoose/.cache.json
+108 silly addNameRange number 2 { name: 'mongoose', range: '>=3.6.11 <3.7.0', hasData: true }
+109 silly addNameRange versions [ 'mongoose',
+109 silly addNameRange   [ '0.0.1',
+109 silly addNameRange     '0.0.2',
+109 silly addNameRange     '0.0.3',
+109 silly addNameRange     '0.0.4',
+109 silly addNameRange     '0.0.5',
+109 silly addNameRange     '1.0.0',
+109 silly addNameRange     '1.0.1',
+109 silly addNameRange     '1.0.2',
+109 silly addNameRange     '0.0.6',
+109 silly addNameRange     '1.0.3',
+109 silly addNameRange     '1.0.4',
+109 silly addNameRange     '1.0.5',
+109 silly addNameRange     '1.0.6',
+109 silly addNameRange     '1.0.7',
+109 silly addNameRange     '1.0.8',
+109 silly addNameRange     '1.0.10',
+109 silly addNameRange     '1.0.11',
+109 silly addNameRange     '1.0.12',
+109 silly addNameRange     '1.0.13',
+109 silly addNameRange     '1.0.14',
+109 silly addNameRange     '1.0.15',
+109 silly addNameRange     '1.0.16',
+109 silly addNameRange     '1.1.0',
+109 silly addNameRange     '1.1.1',
+109 silly addNameRange     '1.1.2',
+109 silly addNameRange     '1.1.3',
+109 silly addNameRange     '1.1.4',
+109 silly addNameRange     '1.1.5',
+109 silly addNameRange     '1.1.6',
+109 silly addNameRange     '1.1.7',
+109 silly addNameRange     '1.1.8',
+109 silly addNameRange     '1.1.9',
+109 silly addNameRange     '1.1.10',
+109 silly addNameRange     '1.1.11',
+109 silly addNameRange     '1.1.12',
+109 silly addNameRange     '1.1.13',
+109 silly addNameRange     '1.1.14',
+109 silly addNameRange     '1.1.15',
+109 silly addNameRange     '1.1.16',
+109 silly addNameRange     '1.1.17',
+109 silly addNameRange     '1.1.18',
+109 silly addNameRange     '1.1.19',
+109 silly addNameRange     '1.1.20',
+109 silly addNameRange     '1.1.21',
+109 silly addNameRange     '1.1.22',
+109 silly addNameRange     '1.1.23',
+109 silly addNameRange     '1.1.24',
+109 silly addNameRange     '1.1.25',
+109 silly addNameRange     '1.2.0',
+109 silly addNameRange     '1.3.0',
+109 silly addNameRange     '1.3.1',
+109 silly addNameRange     '1.3.2',
+109 silly addNameRange     '1.3.3',
+109 silly addNameRange     '1.3.4',
+109 silly addNameRange     '1.3.5',
+109 silly addNameRange     '1.3.6',
+109 silly addNameRange     '1.3.7',
+109 silly addNameRange     '1.4.0',
+109 silly addNameRange     '1.5.0',
+109 silly addNameRange     '1.6.0',
+109 silly addNameRange     '1.7.2',
+109 silly addNameRange     '1.7.3',
+109 silly addNameRange     '1.7.4',
+109 silly addNameRange     '1.8.0',
+109 silly addNameRange     '1.8.1',
+109 silly addNameRange     '1.8.2',
+109 silly addNameRange     '1.8.3',
+109 silly addNameRange     '1.8.4',
+109 silly addNameRange     '2.0.0',
+109 silly addNameRange     '2.0.1',
+109 silly addNameRange     '2.0.2',
+109 silly addNameRange     '2.0.3',
+109 silly addNameRange     '2.0.4',
+109 silly addNameRange     '2.1.0',
+109 silly addNameRange     '2.1.1',
+109 silly addNameRange     '2.1.2',
+109 silly addNameRange     '2.1.3',
+109 silly addNameRange     '2.1.4',
+109 silly addNameRange     '2.2.0',
+109 silly addNameRange     '2.2.1',
+109 silly addNameRange     '2.2.2',
+109 silly addNameRange     '2.2.3',
+109 silly addNameRange     '2.2.4',
+109 silly addNameRange     '2.3.0',
+109 silly addNameRange     '2.3.1',
+109 silly addNameRange     '2.3.2',
+109 silly addNameRange     '2.3.3',
+109 silly addNameRange     '2.3.4',
+109 silly addNameRange     '2.3.5',
+109 silly addNameRange     '2.3.6',
+109 silly addNameRange     '2.3.7',
+109 silly addNameRange     '2.3.8',
+109 silly addNameRange     '2.3.9',
+109 silly addNameRange     '2.3.10',
+109 silly addNameRange     '2.3.11',
+109 silly addNameRange     '2.3.12',
+109 silly addNameRange     '2.3.13',
+109 silly addNameRange     '2.4.0',
+109 silly addNameRange     '2.4.1',
+109 silly addNameRange     '2.4.2',
+109 silly addNameRange     '2.4.3',
+109 silly addNameRange     '2.4.4',
+109 silly addNameRange     '2.4.5',
+109 silly addNameRange     '2.4.6',
+109 silly addNameRange     '2.4.7',
+109 silly addNameRange     '2.4.8',
+109 silly addNameRange     '2.4.9',
+109 silly addNameRange     '2.4.10',
+109 silly addNameRange     '2.5.0',
+109 silly addNameRange     '2.5.1',
+109 silly addNameRange     '2.5.2',
+109 silly addNameRange     '2.5.3',
+109 silly addNameRange     '2.5.4',
+109 silly addNameRange     '2.5.5',
+109 silly addNameRange     '2.5.6',
+109 silly addNameRange     '2.5.7',
+109 silly addNameRange     '2.5.8',
+109 silly addNameRange     '2.5.9',
+109 silly addNameRange     '2.5.10',
+109 silly addNameRange     '2.5.11',
+109 silly addNameRange     '2.5.12',
+109 silly addNameRange     '2.5.13',
+109 silly addNameRange     '2.5.14',
+109 silly addNameRange     '2.6.0',
+109 silly addNameRange     '2.6.1',
+109 silly addNameRange     '2.6.2',
+109 silly addNameRange     '2.6.3',
+109 silly addNameRange     '2.6.4',
+109 silly addNameRange     '2.6.5',
+109 silly addNameRange     '2.6.6',
+109 silly addNameRange     '2.6.7',
+109 silly addNameRange     '2.6.8',
+109 silly addNameRange     '2.7.0',
+109 silly addNameRange     '2.7.1',
+109 silly addNameRange     '2.7.2',
+109 silly addNameRange     '2.7.4',
+109 silly addNameRange     '2.7.3',
+109 silly addNameRange     '3.0.0',
+109 silly addNameRange     '3.0.1',
+109 silly addNameRange     '3.0.2',
+109 silly addNameRange     '2.8.0',
+109 silly addNameRange     '3.0.3',
+109 silly addNameRange     '3.1.0',
+109 silly addNameRange     '2.8.1',
+109 silly addNameRange     '3.1.1',
+109 silly addNameRange     '2.8.2',
+109 silly addNameRange     '2.8.3',
+109 silly addNameRange     '2.9.0',
+109 silly addNameRange     '3.2.0',
+109 silly addNameRange     '2.9.1',
+109 silly addNameRange     '3.2.1',
+109 silly addNameRange     '2.9.2',
+109 silly addNameRange     '3.2.2',
+109 silly addNameRange     '3.3.0',
+109 silly addNameRange     '3.3.1',
+109 silly addNameRange     '2.9.3',
+109 silly addNameRange     '3.4.0',
+109 silly addNameRange     '2.9.4',
+109 silly addNameRange     '2.9.5',
+109 silly addNameRange     '3.5.0',
+109 silly addNameRange     '3.5.1',
+109 silly addNameRange     '3.5.2',
+109 silly addNameRange     '3.5.3',
+109 silly addNameRange     '2.9.6',
+109 silly addNameRange     '2.9.7',
+109 silly addNameRange     '3.5.4',
+109 silly addNameRange     '3.5.5',
+109 silly addNameRange     '2.9.8',
+109 silly addNameRange     '2.9.9',
+109 silly addNameRange     '3.5.6',
+109 silly addNameRange     '3.5.7',
+109 silly addNameRange     '3.5.8',
+109 silly addNameRange     '2.9.10',
+109 silly addNameRange     '3.5.9',
+109 silly addNameRange     '3.6.2',
+109 silly addNameRange     '3.5.10',
+109 silly addNameRange     '3.6.3',
+109 silly addNameRange     '3.5.11',
+109 silly addNameRange     '3.6.4',
+109 silly addNameRange     '3.6.5',
+109 silly addNameRange     '3.6.6',
+109 silly addNameRange     '3.6.7',
+109 silly addNameRange     '3.5.12',
+109 silly addNameRange     '3.6.8',
+109 silly addNameRange     '3.6.9',
+109 silly addNameRange     '3.6.10',
+109 silly addNameRange     '3.5.13',
+109 silly addNameRange     '3.5.14',
+109 silly addNameRange     '3.6.11',
+109 silly addNameRange     '3.6.12',
+109 silly addNameRange     '3.6.13',
+109 silly addNameRange     '3.6.14',
+109 silly addNameRange     '3.6.15',
+109 silly addNameRange     '3.5.15',
+109 silly addNameRange     '3.7.0',
+109 silly addNameRange     '3.6.16',
+109 silly addNameRange     '3.5.16',
+109 silly addNameRange     '3.6.17',
+109 silly addNameRange     '3.7.2',
+109 silly addNameRange     '3.0.0-alpha1',
+109 silly addNameRange     '3.0.0-alpha2',
+109 silly addNameRange     '3.0.0-rc0',
+109 silly addNameRange     '3.6.0-rc0',
+109 silly addNameRange     '3.6.0-rc1',
+109 silly addNameRange     '3.6.18',
+109 silly addNameRange     '3.7.3',
+109 silly addNameRange     '3.6.19',
+109 silly addNameRange     '3.6.20',
+109 silly addNameRange     '3.7.4',
+109 silly addNameRange     '3.8.0',
+109 silly addNameRange     '3.8.1',
+109 silly addNameRange     '3.8.2',
+109 silly addNameRange     '3.8.3',
+109 silly addNameRange     '3.8.4',
+109 silly addNameRange     '3.8.5',
+109 silly addNameRange     '3.8.6',
+109 silly addNameRange     '3.8.7',
+109 silly addNameRange     '3.8.8',
+109 silly addNameRange     '3.8.9',
+109 silly addNameRange     '3.8.10',
+109 silly addNameRange     '3.8.11',
+109 silly addNameRange     '3.9.0',
+109 silly addNameRange     '3.8.12',
+109 silly addNameRange     '3.8.13',
+109 silly addNameRange     '3.8.14',
+109 silly addNameRange     '3.8.15',
+109 silly addNameRange     '3.9.1',
+109 silly addNameRange     '3.8.16',
+109 silly addNameRange     '3.9.2',
+109 silly addNameRange     '3.8.17',
+109 silly addNameRange     '3.9.3',
+109 silly addNameRange     '3.8.18',
+109 silly addNameRange     '3.9.4',
+109 silly addNameRange     '3.8.19',
+109 silly addNameRange     '3.9.5',
+109 silly addNameRange     '3.8.20',
+109 silly addNameRange     '3.9.6',
+109 silly addNameRange     '3.8.21',
+109 silly addNameRange     '3.9.7',
+109 silly addNameRange     '3.8.22',
+109 silly addNameRange     '4.0.0-rc0',
+109 silly addNameRange     '4.0.0-rc1',
+109 silly addNameRange     '3.8.23',
+109 silly addNameRange     '4.0.0-rc2',
+109 silly addNameRange     '3.8.24',
+109 silly addNameRange     '4.0.0-rc3',
+109 silly addNameRange     '3.8.25',
+109 silly addNameRange     '4.0.0-rc4',
+109 silly addNameRange     '4.0.0',
+109 silly addNameRange     '4.0.1',
+109 silly addNameRange     '3.8.26',
+109 silly addNameRange     '3.8.27',
+109 silly addNameRange     '4.0.2',
+109 silly addNameRange     '3.8.28',
+109 silly addNameRange     '4.0.3',
+109 silly addNameRange     '3.8.29',
+109 silly addNameRange     '4.0.4',
+109 silly addNameRange     '3.8.30',
+109 silly addNameRange     '4.0.5',
+109 silly addNameRange     '3.8.31',
+109 silly addNameRange     '4.0.6' ] ]
+110 silly addNamed mongoose@3.6.20
+111 verbose addNamed "3.6.20" is a plain semver version for mongoose
+112 silly mapToRegistry name mongoose
+113 silly mapToRegistry using default registry
+114 silly mapToRegistry registry https://registry.npmjs.org/
+115 silly mapToRegistry uri https://registry.npmjs.org/mongoose
+116 verbose addRemoteTarball https://registry.npmjs.org/mongoose/-/mongoose-3.6.20.tgz not in flight; adding
+117 verbose addRemoteTarball [ 'https://registry.npmjs.org/mongoose/-/mongoose-3.6.20.tgz',
+117 verbose addRemoteTarball   '47263843e6b812ea207eec104c40a36c8d215f53' ]
+118 info retry fetch attempt 1 at 12:59:01
+119 info attempt registry request try #1 at 12:59:01
+120 http fetch GET https://registry.npmjs.org/mongoose/-/mongoose-3.6.20.tgz
+121 http fetch 200 https://registry.npmjs.org/method-override/-/method-override-2.3.3.tgz
+122 silly fetchAndShaCheck shasum 5dc2186d26343bf33e7a2001a8aa3e50440e772b
+123 verbose addTmpTarball /tmp/npm-6957-be0a3a1e/registry.npmjs.org/method-override/-/method-override-2.3.3.tgz not in flight; adding
+124 verbose addTmpTarball already have metadata; skipping unpack for method-override@2.3.3
+125 http fetch 200 https://registry.npmjs.org/body-parser/-/body-parser-1.13.1.tgz
+126 silly fetchAndShaCheck shasum f07218bc2c4b5e36ca261557c9465481b29ecdcd
+127 verbose addTmpTarball /tmp/npm-6957-be0a3a1e/registry.npmjs.org/body-parser/-/body-parser-1.13.1.tgz not in flight; adding
+128 verbose addTmpTarball already have metadata; skipping unpack for body-parser@1.13.1
+129 silly cache afterAdd method-override@2.3.3
+130 verbose afterAdd /home/sergio/.npm/method-override/2.3.3/package/package.json not in flight; writing
+131 silly cache afterAdd body-parser@1.13.1
+132 verbose afterAdd /home/sergio/.npm/body-parser/1.13.1/package/package.json not in flight; writing
+133 verbose afterAdd /home/sergio/.npm/method-override/2.3.3/package/package.json written
+134 verbose afterAdd /home/sergio/.npm/body-parser/1.13.1/package/package.json written
+135 http 200 https://registry.npmjs.org/express
+136 silly get cb [ 200,
+136 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+136 silly get     etag: '"9EOX8S8HWWZZ6GNK9PE9QCWAY"',
+136 silly get     'content-type': 'application/json',
+136 silly get     'cache-control': 'max-age=60',
+136 silly get     'content-length': '505961',
+136 silly get     'accept-ranges': 'bytes',
+136 silly get     date: 'Mon, 22 Jun 2015 10:59:01 GMT',
+136 silly get     via: '1.1 varnish',
+136 silly get     age: '25',
+136 silly get     connection: 'keep-alive',
+136 silly get     'x-served-by': 'cache-lcy1120-LCY',
+136 silly get     'x-cache': 'HIT',
+136 silly get     'x-cache-hits': '2',
+136 silly get     'x-timer': 'S1434970741.044404,VS0,VE0',
+136 silly get     vary: 'Accept' } ]
+137 verbose get saving express to /home/sergio/.npm/registry.npmjs.org/express/.cache.json
+138 silly addNameRange number 2 { name: 'express', range: '>=4.9.0 <4.10.0', hasData: true }
+139 silly addNameRange versions [ 'express',
+139 silly addNameRange   [ '0.14.0',
+139 silly addNameRange     '0.14.1',
+139 silly addNameRange     '1.0.0',
+139 silly addNameRange     '1.0.1',
+139 silly addNameRange     '1.0.2',
+139 silly addNameRange     '1.0.3',
+139 silly addNameRange     '1.0.4',
+139 silly addNameRange     '1.0.5',
+139 silly addNameRange     '1.0.6',
+139 silly addNameRange     '1.0.7',
+139 silly addNameRange     '1.0.8',
+139 silly addNameRange     '2.0.0',
+139 silly addNameRange     '2.1.0',
+139 silly addNameRange     '2.1.1',
+139 silly addNameRange     '2.2.0',
+139 silly addNameRange     '2.2.1',
+139 silly addNameRange     '2.2.2',
+139 silly addNameRange     '2.3.0',
+139 silly addNameRange     '2.3.1',
+139 silly addNameRange     '2.3.2',
+139 silly addNameRange     '2.3.3',
+139 silly addNameRange     '2.3.4',
+139 silly addNameRange     '2.3.5',
+139 silly addNameRange     '2.3.6',
+139 silly addNameRange     '2.3.7',
+139 silly addNameRange     '2.3.8',
+139 silly addNameRange     '2.3.9',
+139 silly addNameRange     '2.3.10',
+139 silly addNameRange     '2.3.11',
+139 silly addNameRange     '2.3.12',
+139 silly addNameRange     '2.4.0',
+139 silly addNameRange     '2.4.1',
+139 silly addNameRange     '2.4.2',
+139 silly addNameRange     '2.4.3',
+139 silly addNameRange     '2.4.4',
+139 silly addNameRange     '2.4.5',
+139 silly addNameRange     '2.4.6',
+139 silly addNameRange     '2.4.7',
+139 silly addNameRange     '2.5.0',
+139 silly addNameRange     '2.5.1',
+139 silly addNameRange     '2.5.2',
+139 silly addNameRange     '2.5.3',
+139 silly addNameRange     '2.5.4',
+139 silly addNameRange     '2.5.5',
+139 silly addNameRange     '2.5.6',
+139 silly addNameRange     '2.5.7',
+139 silly addNameRange     '2.5.8',
+139 silly addNameRange     '2.5.9',
+139 silly addNameRange     '2.5.10',
+139 silly addNameRange     '2.5.11',
+139 silly addNameRange     '3.0.0',
+139 silly addNameRange     '3.0.1',
+139 silly addNameRange     '3.0.2',
+139 silly addNameRange     '3.0.3',
+139 silly addNameRange     '3.0.4',
+139 silly addNameRange     '3.0.5',
+139 silly addNameRange     '3.0.6',
+139 silly addNameRange     '3.1.0',
+139 silly addNameRange     '3.1.1',
+139 silly addNameRange     '3.1.2',
+139 silly addNameRange     '3.2.0',
+139 silly addNameRange     '3.2.1',
+139 silly addNameRange     '3.2.2',
+139 silly addNameRange     '3.2.3',
+139 silly addNameRange     '3.2.4',
+139 silly addNameRange     '3.2.5',
+139 silly addNameRange     '3.2.6',
+139 silly addNameRange     '3.3.0',
+139 silly addNameRange     '3.3.1',
+139 silly addNameRange     '3.3.2',
+139 silly addNameRange     '3.3.3',
+139 silly addNameRange     '3.3.4',
+139 silly addNameRange     '3.3.5',
+139 silly addNameRange     '3.3.6',
+139 silly addNameRange     '1.0.0-beta',
+139 silly addNameRange     '1.0.0-beta2',
+139 silly addNameRange     '1.0.0-rc',
+139 silly addNameRange     '1.0.0-rc2',
+139 silly addNameRange     '1.0.0-rc3',
+139 silly addNameRange     '1.0.0-rc4',
+139 silly addNameRange     '2.0.0-beta',
+139 silly addNameRange     '2.0.0-beta2',
+139 silly addNameRange     '2.0.0-beta3',
+139 silly addNameRange     '2.0.0-rc',
+139 silly addNameRange     '2.0.0-rc2',
+139 silly addNameRange     '2.0.0-rc3',
+139 silly addNameRange     '3.0.0-alpha1',
+139 silly addNameRange     '3.0.0-alpha2',
+139 silly addNameRange     '3.0.0-alpha3',
+139 silly addNameRange     '3.0.0-alpha4',
+139 silly addNameRange     '3.0.0-alpha5',
+139 silly addNameRange     '3.0.0-beta1',
+139 silly addNameRange     '3.0.0-beta2',
+139 silly addNameRange     '3.0.0-beta3',
+139 silly addNameRange     '3.0.0-beta4',
+139 silly addNameRange     '3.0.0-beta6',
+139 silly addNameRange     '3.0.0-beta7',
+139 silly addNameRange     '3.0.0-rc1',
+139 silly addNameRange     '3.0.0-rc2',
+139 silly addNameRange     '3.0.0-rc3',
+139 silly addNameRange     '3.0.0-rc4',
+139 silly addNameRange     '3.0.0-rc5',
+139 silly addNameRange     '3.3.7',
+139 silly addNameRange     '3.3.8',
+139 silly addNameRange     '3.4.0',
+139 silly addNameRange     '3.4.1',
+139 silly addNameRange     '3.4.2',
+139 silly addNameRange     '3.4.3',
+139 silly addNameRange     '3.4.4',
+139 silly addNameRange     '3.4.5',
+139 silly addNameRange     '3.4.6',
+139 silly addNameRange     '3.4.7',
+139 silly addNameRange     '3.4.8',
+139 silly addNameRange     '4.0.0-rc1',
+139 silly addNameRange     '4.0.0-rc2',
+139 silly addNameRange     '3.5.0',
+139 silly addNameRange     '4.0.0-rc3',
+139 silly addNameRange     '4.0.0-rc4',
+139 silly addNameRange     '3.5.1',
+139 silly addNameRange     '4.0.0',
+139 silly addNameRange     '3.5.2',
+139 silly addNameRange     '4.1.0',
+139 silly addNameRange     '4.1.1',
+139 silly addNameRange     '3.5.3',
+139 silly addNameRange     '4.1.2',
+139 silly addNameRange     '3.6.0',
+139 silly addNameRange     '4.2.0',
+139 silly addNameRange     '3.7.0',
+139 silly addNameRange     '3.8.0',
+139 silly addNameRange     '4.3.0',
+139 silly addNameRange     '4.3.1',
+139 silly addNameRange     '3.8.1',
+139 silly addNameRange     '4.3.2',
+139 silly addNameRange     '3.9.0',
+139 silly addNameRange     '4.4.0',
+139 silly addNameRange     '4.4.1',
+139 silly addNameRange     '3.10.0',
+139 silly addNameRange     '3.10.1',
+139 silly addNameRange     '3.10.2',
+139 silly addNameRange     '3.10.3',
+139 silly addNameRange     '3.10.4',
+139 silly addNameRange     '4.4.2',
+139 silly addNameRange     '3.10.5',
+139 silly addNameRange     '4.4.3',
+139 silly addNameRange     '3.11.0',
+139 silly addNameRange     '4.4.4',
+139 silly addNameRange     '3.12.0',
+139 silly addNameRange     '3.12.1',
+139 silly addNameRange     '4.4.5',
+139 silly addNameRange     '3.13.0',
+139 silly addNameRange     '4.5.0',
+139 silly addNameRange     '4.5.1',
+139 silly addNameRange     '3.14.0',
+139 silly addNameRange     '4.6.0',
+139 silly addNameRange     '4.6.1',
+139 silly addNameRange     '3.15.0',
+139 silly addNameRange     '4.7.0',
+139 silly addNameRange     '3.15.1',
+139 silly addNameRange     '4.7.1',
+139 silly addNameRange     '3.15.2',
+139 silly addNameRange     '4.7.2',
+139 silly addNameRange     '4.7.3',
+139 silly addNameRange     '3.15.3',
+139 silly addNameRange     '4.7.4',
+139 silly addNameRange     '3.16.0',
+139 silly addNameRange     '4.8.0',
+139 silly addNameRange     '3.16.1',
+139 silly addNameRange     '4.8.1',
+139 silly addNameRange     '3.16.2',
+139 silly addNameRange     '4.8.2',
+139 silly addNameRange     '3.16.3',
+139 silly addNameRange     '3.16.4',
+139 silly addNameRange     '4.8.3',
+139 silly addNameRange     '3.16.5',
+139 silly addNameRange     '3.16.6',
+139 silly addNameRange     '4.8.4',
+139 silly addNameRange     '3.16.7',
+139 silly addNameRange     '4.8.5',
+139 silly addNameRange     '3.16.8',
+139 silly addNameRange     '4.8.6',
+139 silly addNameRange     '3.16.9',
+139 silly addNameRange     '4.8.7',
+139 silly addNameRange     '3.16.10',
+139 silly addNameRange     '4.8.8',
+139 silly addNameRange     '3.17.0',
+139 silly addNameRange     '3.17.1',
+139 silly addNameRange     '4.9.0',
+139 silly addNameRange     '3.17.2',
+139 silly addNameRange     '4.9.1',
+139 silly addNameRange     '4.9.2',
+139 silly addNameRange     '3.17.3',
+139 silly addNameRange     '4.9.3',
+139 silly addNameRange     '3.17.4',
+139 silly addNameRange     '4.9.4',
+139 silly addNameRange     '3.17.5',
+139 silly addNameRange     '4.9.5',
+139 silly addNameRange     '3.17.6',
+139 silly addNameRange     '3.17.7',
+139 silly addNameRange     '4.9.6',
+139 silly addNameRange     '4.9.7',
+139 silly addNameRange     '3.17.8',
+139 silly addNameRange     '4.9.8',
+139 silly addNameRange     '3.18.0',
+139 silly addNameRange     '3.18.1',
+139 silly addNameRange     '4.10.0',
+139 silly addNameRange     '3.18.2',
+139 silly addNameRange     '4.10.1',
+139 silly addNameRange     '5.0.0-alpha.1',
+139 silly addNameRange     '3.18.3',
+139 silly addNameRange     '4.10.2',
+139 silly addNameRange     '3.18.4',
+139 silly addNameRange     '4.10.3',
+139 silly addNameRange     '4.10.4',
+139 silly addNameRange     '4.10.5',
+139 silly addNameRange     '3.18.5',
+139 silly addNameRange     '3.18.6',
+139 silly addNameRange     '4.10.6',
+139 silly addNameRange     '4.10.7',
+139 silly addNameRange     '3.19.0',
+139 silly addNameRange     '4.10.8',
+139 silly addNameRange     '4.11.0',
+139 silly addNameRange     '3.19.1',
+139 silly addNameRange     '4.11.1',
+139 silly addNameRange     '3.19.2',
+139 silly addNameRange     '4.11.2',
+139 silly addNameRange     '3.20.0',
+139 silly addNameRange     '4.12.0',
+139 silly addNameRange     '3.20.1',
+139 silly addNameRange     '4.12.1',
+139 silly addNameRange     '4.12.2',
+139 silly addNameRange     '3.20.2',
+139 silly addNameRange     '4.12.3',
+139 silly addNameRange     '3.20.3',
+139 silly addNameRange     '4.12.4',
+139 silly addNameRange     '3.21.0',
+139 silly addNameRange     '4.13.0' ] ]
+140 silly addNamed express@4.9.8
+141 verbose addNamed "4.9.8" is a plain semver version for express
+142 silly mapToRegistry name express
+143 silly mapToRegistry using default registry
+144 silly mapToRegistry registry https://registry.npmjs.org/
+145 silly mapToRegistry uri https://registry.npmjs.org/express
+146 verbose addRemoteTarball https://registry.npmjs.org/express/-/express-4.9.8.tgz not in flight; adding
+147 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-4.9.8.tgz',
+147 verbose addRemoteTarball   'f360f596baeabbd0e5223b603d6eb578d9d2d10d' ]
+148 info retry fetch attempt 1 at 12:59:01
+149 info attempt registry request try #1 at 12:59:01
+150 http fetch GET https://registry.npmjs.org/express/-/express-4.9.8.tgz
+151 http fetch 200 https://registry.npmjs.org/mongoose/-/mongoose-3.6.20.tgz
+152 silly fetchAndShaCheck shasum 47263843e6b812ea207eec104c40a36c8d215f53
+153 verbose addTmpTarball /tmp/npm-6957-be0a3a1e/registry.npmjs.org/mongoose/-/mongoose-3.6.20.tgz not in flight; adding
+154 verbose addTmpTarball already have metadata; skipping unpack for mongoose@3.6.20
+155 silly cache afterAdd mongoose@3.6.20
+156 verbose afterAdd /home/sergio/.npm/mongoose/3.6.20/package/package.json not in flight; writing
+157 verbose afterAdd /home/sergio/.npm/mongoose/3.6.20/package/package.json written
+158 http fetch 200 https://registry.npmjs.org/express/-/express-4.9.8.tgz
+159 silly fetchAndShaCheck shasum f360f596baeabbd0e5223b603d6eb578d9d2d10d
+160 verbose addTmpTarball /tmp/npm-6957-be0a3a1e/registry.npmjs.org/express/-/express-4.9.8.tgz not in flight; adding
+161 verbose addTmpTarball already have metadata; skipping unpack for express@4.9.8
+162 silly cache afterAdd express@4.9.8
+163 verbose afterAdd /home/sergio/.npm/express/4.9.8/package/package.json not in flight; writing
+164 verbose afterAdd /home/sergio/.npm/express/4.9.8/package/package.json written
+165 silly install resolved [ { name: 'method-override',
+165 silly install resolved     description: 'Override HTTP verbs',
+165 silly install resolved     version: '2.3.3',
+165 silly install resolved     contributors: [ [Object], [Object] ],
+165 silly install resolved     license: 'MIT',
+165 silly install resolved     repository:
+165 silly install resolved      { type: 'git',
+165 silly install resolved        url: 'https://github.com/expressjs/method-override' },
+165 silly install resolved     dependencies:
+165 silly install resolved      { debug: '~2.2.0',
+165 silly install resolved        methods: '~1.1.1',
+165 silly install resolved        parseurl: '~1.3.0',
+165 silly install resolved        vary: '~1.0.0' },
+165 silly install resolved     devDependencies: { istanbul: '0.3.9', mocha: '2.2.4', supertest: '~0.15.0' },
+165 silly install resolved     files: [ 'LICENSE', 'HISTORY.md', 'index.js' ],
+165 silly install resolved     engines: { node: '>= 0.8.0' },
+165 silly install resolved     scripts:
+165 silly install resolved      { test: 'mocha --check-leaks --reporter spec --bail test/',
+165 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/',
+165 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec test/' },
+165 silly install resolved     gitHead: '3a230d306317467f31a61351794ba0a5bfc4ced5',
+165 silly install resolved     bugs: { url: 'https://github.com/expressjs/method-override/issues' },
+165 silly install resolved     homepage: 'https://github.com/expressjs/method-override',
+165 silly install resolved     _id: 'method-override@2.3.3',
+165 silly install resolved     _shasum: '5dc2186d26343bf33e7a2001a8aa3e50440e772b',
+165 silly install resolved     _from: 'method-override@>=2.1.2 <3.0.0',
+165 silly install resolved     _npmVersion: '1.4.28',
+165 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+165 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+165 silly install resolved     dist:
+165 silly install resolved      { shasum: '5dc2186d26343bf33e7a2001a8aa3e50440e772b',
+165 silly install resolved        tarball: 'http://registry.npmjs.org/method-override/-/method-override-2.3.3.tgz' },
+165 silly install resolved     directories: {},
+165 silly install resolved     _resolved: 'https://registry.npmjs.org/method-override/-/method-override-2.3.3.tgz' },
+165 silly install resolved   { name: 'body-parser',
+165 silly install resolved     description: 'Node.js body parsing middleware',
+165 silly install resolved     version: '1.13.1',
+165 silly install resolved     contributors: [ [Object], [Object] ],
+165 silly install resolved     license: 'MIT',
+165 silly install resolved     repository: { type: 'git', url: 'https://github.com/expressjs/body-parser' },
+165 silly install resolved     dependencies:
+165 silly install resolved      { bytes: '2.1.0',
+165 silly install resolved        'content-type': '~1.0.1',
+165 silly install resolved        debug: '~2.2.0',
+165 silly install resolved        depd: '~1.0.1',
+165 silly install resolved        'http-errors': '~1.3.1',
+165 silly install resolved        'iconv-lite': '0.4.10',
+165 silly install resolved        'on-finished': '~2.3.0',
+165 silly install resolved        qs: '2.4.2',
+165 silly install resolved        'raw-body': '~2.1.1',
+165 silly install resolved        'type-is': '~1.6.3' },
+165 silly install resolved     devDependencies:
+165 silly install resolved      { istanbul: '0.3.9',
+165 silly install resolved        methods: '~1.1.1',
+165 silly install resolved        mocha: '2.2.5',
+165 silly install resolved        supertest: '1.0.1' },
+165 silly install resolved     files: [ 'lib/', 'LICENSE', 'HISTORY.md', 'index.js' ],
+165 silly install resolved     engines: { node: '>= 0.8' },
+165 silly install resolved     scripts:
+165 silly install resolved      { test: 'mocha --require test/support/env --reporter spec --check-leaks --bail test/',
+165 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env --reporter dot --check-leaks test/',
+165 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require test/support/env --reporter spec --check-leaks test/' },
+165 silly install resolved     gitHead: 'bf6c1465fe9e36e04668d8129c0fbb8a9b375060',
+165 silly install resolved     bugs: { url: 'https://github.com/expressjs/body-parser/issues' },
+165 silly install resolved     homepage: 'https://github.com/expressjs/body-parser',
+165 silly install resolved     _id: 'body-parser@1.13.1',
+165 silly install resolved     _shasum: 'f07218bc2c4b5e36ca261557c9465481b29ecdcd',
+165 silly install resolved     _from: 'body-parser@>=1.5.1 <2.0.0',
+165 silly install resolved     _npmVersion: '1.4.28',
+165 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+165 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+165 silly install resolved     dist:
+165 silly install resolved      { shasum: 'f07218bc2c4b5e36ca261557c9465481b29ecdcd',
+165 silly install resolved        tarball: 'http://registry.npmjs.org/body-parser/-/body-parser-1.13.1.tgz' },
+165 silly install resolved     directories: {},
+165 silly install resolved     _resolved: 'https://registry.npmjs.org/body-parser/-/body-parser-1.13.1.tgz' },
+165 silly install resolved   { name: 'mongoose',
+165 silly install resolved     description: 'Elegant MongoDB object modeling for Node.js',
+165 silly install resolved     version: '3.6.20',
+165 silly install resolved     author: { name: 'Guillermo Rauch', email: 'guillermo@learnboost.com' },
+165 silly install resolved     keywords:
+165 silly install resolved      [ 'mongodb',
+165 silly install resolved        'document',
+165 silly install resolved        'model',
+165 silly install resolved        'schema',
+165 silly install resolved        'database',
+165 silly install resolved        'odm',
+165 silly install resolved        'data',
+165 silly install resolved        'datastore',
+165 silly install resolved        'query',
+165 silly install resolved        'nosql',
+165 silly install resolved        'orm',
+165 silly install resolved        'db' ],
+165 silly install resolved     dependencies:
+165 silly install resolved      { hooks: '0.2.1',
+165 silly install resolved        mongodb: '1.3.19',
+165 silly install resolved        ms: '0.1.0',
+165 silly install resolved        sliced: '0.0.5',
+165 silly install resolved        muri: '0.3.1',
+165 silly install resolved        mpromise: '0.2.1',
+165 silly install resolved        mpath: '0.1.1',
+165 silly install resolved        'regexp-clone': '0.0.1' },
+165 silly install resolved     devDependencies:
+165 silly install resolved      { mocha: '1.12.0',
+165 silly install resolved        'node-static': '0.5.9',
+165 silly install resolved        dox: '0.3.1',
+165 silly install resolved        jade: '0.26.3',
+165 silly install resolved        'highlight.js': '7.0.1',
+165 silly install resolved        markdown: '0.3.1',
+165 silly install resolved        'promises-aplus-tests': '>= 1.0.2',
+165 silly install resolved        tbd: '0.6.4',
+165 silly install resolved        benchmark: '1.0.0',
+165 silly install resolved        open: '0.0.3' },
+165 silly install resolved     directories: { lib: './lib/mongoose' },
+165 silly install resolved     scripts: { test: 'make test' },
+165 silly install resolved     main: './index.js',
+165 silly install resolved     engines: { node: '>=0.6.19' },
+165 silly install resolved     bugs: { url: 'https://github.com/learnboost/mongoose/issues/new' },
+165 silly install resolved     repository: { type: 'git', url: 'git://github.com/LearnBoost/mongoose.git' },
+165 silly install resolved     homepage: 'http://mongoosejs.com',
+165 silly install resolved     _id: 'mongoose@3.6.20',
+165 silly install resolved     dist:
+165 silly install resolved      { shasum: '47263843e6b812ea207eec104c40a36c8d215f53',
+165 silly install resolved        tarball: 'http://registry.npmjs.org/mongoose/-/mongoose-3.6.20.tgz' },
+165 silly install resolved     _from: 'mongoose@>=3.6.11 <3.7.0',
+165 silly install resolved     _npmVersion: '1.3.8',
+165 silly install resolved     _npmUser: { name: 'aaron', email: 'aaron.heckmann+github@gmail.com' },
+165 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+165 silly install resolved     _shasum: '47263843e6b812ea207eec104c40a36c8d215f53',
+165 silly install resolved     _resolved: 'https://registry.npmjs.org/mongoose/-/mongoose-3.6.20.tgz' },
+165 silly install resolved   { name: 'express',
+165 silly install resolved     description: 'Fast, unopinionated, minimalist web framework',
+165 silly install resolved     version: '4.9.8',
+165 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+165 silly install resolved     contributors:
+165 silly install resolved      [ [Object],
+165 silly install resolved        [Object],
+165 silly install resolved        [Object],
+165 silly install resolved        [Object],
+165 silly install resolved        [Object],
+165 silly install resolved        [Object],
+165 silly install resolved        [Object] ],
+165 silly install resolved     keywords:
+165 silly install resolved      [ 'express',
+165 silly install resolved        'framework',
+165 silly install resolved        'sinatra',
+165 silly install resolved        'web',
+165 silly install resolved        'rest',
+165 silly install resolved        'restful',
+165 silly install resolved        'router',
+165 silly install resolved        'app',
+165 silly install resolved        'api' ],
+165 silly install resolved     repository: { type: 'git', url: 'https://github.com/strongloop/express' },
+165 silly install resolved     license: 'MIT',
+165 silly install resolved     homepage: 'http://expressjs.com/',
+165 silly install resolved     dependencies:
+165 silly install resolved      { accepts: '~1.1.2',
+165 silly install resolved        'cookie-signature': '1.0.5',
+165 silly install resolved        debug: '~2.0.0',
+165 silly install resolved        depd: '0.4.5',
+165 silly install resolved        'escape-html': '1.0.1',
+165 silly install resolved        etag: '~1.4.0',
+165 silly install resolved        finalhandler: '0.2.0',
+165 silly install resolved        fresh: '0.2.4',
+165 silly install resolved        'media-typer': '0.3.0',
+165 silly install resolved        methods: '1.1.0',
+165 silly install resolved        'on-finished': '~2.1.0',
+165 silly install resolved        parseurl: '~1.3.0',
+165 silly install resolved        'path-to-regexp': '0.1.3',
+165 silly install resolved        'proxy-addr': '~1.0.3',
+165 silly install resolved        qs: '2.2.4',
+165 silly install resolved        'range-parser': '~1.0.2',
+165 silly install resolved        send: '0.9.3',
+165 silly install resolved        'serve-static': '~1.6.4',
+165 silly install resolved        'type-is': '~1.5.2',
+165 silly install resolved        vary: '~1.0.0',
+165 silly install resolved        cookie: '0.1.2',
+165 silly install resolved        'merge-descriptors': '0.0.2',
+165 silly install resolved        'utils-merge': '1.0.0' },
+165 silly install resolved     devDependencies:
+165 silly install resolved      { after: '0.8.1',
+165 silly install resolved        istanbul: '0.3.2',
+165 silly install resolved        mocha: '~1.21.5',
+165 silly install resolved        should: '~4.0.4',
+165 silly install resolved        supertest: '~0.14.0',
+165 silly install resolved        ejs: '~1.0.0',
+165 silly install resolved        marked: '0.3.2',
+165 silly install resolved        hjs: '~0.0.6',
+165 silly install resolved        'body-parser': '~1.8.2',
+165 silly install resolved        'connect-redis': '~2.1.0',
+165 silly install resolved        'cookie-parser': '~1.3.3',
+165 silly install resolved        'express-session': '~1.8.2',
+165 silly install resolved        jade: '~1.6.0',
+165 silly install resolved        'method-override': '~2.2.0',
+165 silly install resolved        morgan: '~1.3.1',
+165 silly install resolved        multiparty: '~3.3.2',
+165 silly install resolved        vhost: '~3.0.0' },
+165 silly install resolved     engines: { node: '>= 0.10.0' },
+165 silly install resolved     scripts:
+165 silly install resolved      { prepublish: 'npm prune',
+165 silly install resolved        test: 'mocha --require test/support/env --reporter spec --bail --check-leaks test/ test/acceptance/',
+165 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env --reporter dot --check-leaks test/ test/acceptance/',
+165 silly install resolved        'test-tap': 'mocha --require test/support/env --reporter tap --check-leaks test/ test/acceptance/',
+165 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require test/support/env --reporter spec --check-leaks test/ test/acceptance/' },
+165 silly install resolved     gitHead: 'f15bba7309f2e0a17f7b7a5552b9618f074078c8',
+165 silly install resolved     bugs: { url: 'https://github.com/strongloop/express/issues' },
+165 silly install resolved     _id: 'express@4.9.8',
+165 silly install resolved     _shasum: 'f360f596baeabbd0e5223b603d6eb578d9d2d10d',
+165 silly install resolved     _from: 'express@>=4.9.0 <4.10.0',
+165 silly install resolved     _npmVersion: '1.4.21',
+165 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+165 silly install resolved     maintainers:
+165 silly install resolved      [ [Object],
+165 silly install resolved        [Object],
+165 silly install resolved        [Object],
+165 silly install resolved        [Object],
+165 silly install resolved        [Object],
+165 silly install resolved        [Object],
+165 silly install resolved        [Object] ],
+165 silly install resolved     dist:
+165 silly install resolved      { shasum: 'f360f596baeabbd0e5223b603d6eb578d9d2d10d',
+165 silly install resolved        tarball: 'http://registry.npmjs.org/express/-/express-4.9.8.tgz' },
+165 silly install resolved     directories: {},
+165 silly install resolved     _resolved: 'https://registry.npmjs.org/express/-/express-4.9.8.tgz' } ]
+166 info install method-override@2.3.3 into /home/sergio/api-city
+167 info install body-parser@1.13.1 into /home/sergio/api-city
+168 info install mongoose@3.6.20 into /home/sergio/api-city
+169 info install express@4.9.8 into /home/sergio/api-city
+170 info installOne method-override@2.3.3
+171 verbose installOne of method-override to /home/sergio/api-city not in flight; installing
+172 info installOne body-parser@1.13.1
+173 verbose installOne of body-parser to /home/sergio/api-city not in flight; installing
+174 info installOne mongoose@3.6.20
+175 verbose installOne of mongoose to /home/sergio/api-city not in flight; installing
+176 info installOne express@4.9.8
+177 verbose installOne of express to /home/sergio/api-city not in flight; installing
+178 warn locking Error: EACCES, open '/home/sergio/.npm/_locks/method-override-056705b845a36933.lock'
+178 warn locking     at Error (native)
+178 warn locking  /home/sergio/.npm/_locks/method-override-056705b845a36933.lock failed { [Error: EACCES, open '/home/sergio/.npm/_locks/method-override-056705b845a36933.lock']
+178 warn locking   errno: -13,
+178 warn locking   code: 'EACCES',
+178 warn locking   path: '/home/sergio/.npm/_locks/method-override-056705b845a36933.lock' }
+179 verbose stack Error: Attempt to unlock /home/sergio/api-city/node_modules/method-override, which hasn't been locked
+179 verbose stack     at unlock (/usr/lib/node_modules/npm/lib/utils/locker.js:66:11)
+179 verbose stack     at cb (/usr/lib/node_modules/npm/lib/install.js:1017:5)
+179 verbose stack     at /usr/lib/node_modules/npm/lib/install.js:1021:20
+179 verbose stack     at /usr/lib/node_modules/npm/lib/utils/locker.js:40:9
+179 verbose stack     at cb (/usr/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+179 verbose stack     at /usr/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+179 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+180 verbose cwd /home/sergio/api-city
+181 error Linux 3.13.0-24-generic
+182 error argv "/usr/bin/node" "/usr/bin/npm" "install"
+183 error node v0.12.4
+184 error npm  v2.10.1
+185 error Attempt to unlock /home/sergio/api-city/node_modules/method-override, which hasn't been locked
+186 error If you need help, you may report this error at:
+186 error     <https://github.com/npm/npm/issues>
+187 verbose exit [ 1, true ]

@@ -68,7 +68,7 @@ r.route('/videos')
     .get(VideoCtrl.findAllVideos)
     .post(VideoCtrl.findVideoId);
 
-r.route('videos/:id')
+r.route('/videos/:id')
     .get(VideoCtrl.findVideoId)
     .delete(VideoCtrl.deleteVideoId);
 

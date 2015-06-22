@@ -29,7 +29,7 @@
           <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="68" column="34" selection-start="2160" selection-end="2160" vertical-scroll-proportion="0.8937824" vertical-offset="330" max-vertical-offset="1245">
+                <state line="67" column="18" selection-start="2125" selection-end="2125" vertical-scroll-proportion="0.87435234" vertical-offset="330" max-vertical-offset="1245">
                   <folding />
                 </state>
               </provider>
@@ -87,7 +87,7 @@
           <file leaf-file-name="videos.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controllers/videos.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="0" selection-start="357" selection-end="357" vertical-scroll-proportion="0.29145077" vertical-offset="0" max-vertical-offset="772">
+                <state line="46" column="0" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.8834197" vertical-offset="8" max-vertical-offset="780">
                   <folding />
                 </state>
               </provider>
@@ -601,14 +601,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="34" selection-start="2160" selection-end="2160" vertical-scroll-proportion="0.8937824" vertical-offset="330" max-vertical-offset="1245">
+        <state line="67" column="18" selection-start="2125" selection-end="2125" vertical-scroll-proportion="0.87435234" vertical-offset="330" max-vertical-offset="1245">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/videos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="357" selection-end="357" vertical-scroll-proportion="0.29145077" vertical-offset="0" max-vertical-offset="772">
+        <state line="46" column="0" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.8834197" vertical-offset="8" max-vertical-offset="780">
           <folding />
         </state>
       </provider>

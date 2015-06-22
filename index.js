@@ -37,6 +37,7 @@ var EventModel     = require('./models/event')(app, mongoose);
 var EventCtrl = require('./controllers/events');
 var PetitionModel = require('./models/petition')(app, mongoose);
 var PetitionCtrl = require('./controllers/petitions');
+var VideoModel = require('./models/video')(app, mongoose);
 var VideoCtrl = require('./controllers/videos');
 
 // API routes
@@ -64,6 +65,8 @@ r.route('/petitions/:id')
 r.route('/petitions/close/:id')
     .put(PetitionCtrl.closePetitionId);
 
+r.route('/videos')
+    .get(VideoCtrl.findAllVideos);
 
 
 app.use('/api', r);

@@ -29,7 +29,7 @@
           <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="65" column="0" selection-start="2047" selection-end="2047" vertical-scroll-proportion="0.7085492" vertical-offset="428" max-vertical-offset="1200">
+                <state line="65" column="0" selection-start="2047" selection-end="2047" vertical-scroll-proportion="0.95207256" vertical-offset="240" max-vertical-offset="1200">
                   <folding />
                 </state>
               </provider>
@@ -47,7 +47,7 @@
           <file leaf-file-name="video.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/models/video.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="25" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+                <state line="7" column="25" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="225">
                   <folding />
                 </state>
               </provider>
@@ -56,7 +56,7 @@
           <file leaf-file-name="videos.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controllers/videos.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="24" column="39" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
+                <state line="24" column="39" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="960">
                   <folding />
                 </state>
               </provider>
@@ -87,7 +87,7 @@
           <file leaf-file-name="petitions.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controllers/petitions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="25" selection-start="539" selection-end="539" vertical-scroll-proportion="0.40803108" vertical-offset="0" max-vertical-offset="1500">
+                <state line="21" column="25" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1500">
                   <folding />
                 </state>
               </provider>
@@ -289,6 +289,55 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="0" selection-start="2047" selection-end="2047" vertical-scroll-proportion="0.0" vertical-offset="428" max-vertical-offset="1200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/petition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="485" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/video.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/videos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="39" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/petitions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="25" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
@@ -537,7 +586,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/petitions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="25" selection-start="539" selection-end="539" vertical-scroll-proportion="0.40803108" vertical-offset="0" max-vertical-offset="1500">
+        <state line="21" column="25" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1500">
           <folding />
         </state>
       </provider>
@@ -558,7 +607,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="2047" selection-end="2047" vertical-scroll-proportion="0.7085492" vertical-offset="428" max-vertical-offset="1200">
+        <state line="65" column="0" selection-start="2047" selection-end="2047" vertical-scroll-proportion="0.95207256" vertical-offset="240" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>

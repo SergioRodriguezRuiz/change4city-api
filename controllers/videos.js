@@ -31,6 +31,9 @@ exports.findVideoId = function(req, res) {
 exports.addVideo = function(req, res) {
     console.log('POST');
 
+    var id_vimeo = (req.body.url).split("/");
+    id_vimeo = id_vimeo[id_vimeo.length-1];
+    
     var video = new Video({
         url:                req.body.url,
         id_vimeo:           req.body.id_vimeo

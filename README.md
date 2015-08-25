@@ -1,5 +1,6 @@
 # API FOR CHANGE4CITY ANDROID APP (FINAL PROJECT)
 
+Currently deploy in HEROKU
 
 ## Running Locally
 

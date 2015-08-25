@@ -14,3 +14,7 @@ http://api-city.herokuapp.com/api/[resource]
 eg:
 events, petitions...
 
+## Aim
+
+Understand NodeJS with no relational databases like MongoDB using data modeling framework mongooseJS.
+

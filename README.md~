@@ -7,10 +7,5 @@ Currently deploy in HEROKU
 $ npm start
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
-Use PostMan to test. 
 
-http://api-city.herokuapp.com/api/[resource]
-
-eg:
-events, petitions...
 
